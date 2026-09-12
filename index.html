@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Siddhesh Bhoir - Backend Developer, Systems Enthusiast & Security Practitioner." />
-  <title>Siddhesh Bhoir | Systems & Backend Engineer</title>
+  <meta name="description"
+    content="Portfolio of Siddhesh Bhoir - Backend Developer, Systems Enthusiast & Security Practitioner." />
+  <title>Siddhesh Bhoir | Aspiring Ethical Hacker</title>
 
-  <!-- Typography: Inter for UI, JetBrains Mono for Technical Accents -->
+  <!-- ================================================================
+       TYPOGRAPHY
+       Inter    -> primary UI font
+       JetBrains Mono -> technical / monospace accents (badges, labels)
+  ================================================================= -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <!-- Ambient Systems Grid & Radial Spotlights -->
+
+  <!-- ================================================================
+       AMBIENT BACKGROUND LAYERS
+       Purely decorative — grid overlay + radial glow behind content.
+  ================================================================= -->
   <div class="workbench-grid" aria-hidden="true"></div>
   <div class="ambient-glow" aria-hidden="true"></div>
 
   <div class="layout-container">
-    <!-- Header / Hero Section -->
+
+    <!-- ================================================================
+         SECTION: HERO
+         Name, headline, location, availability badge, primary CTAs
+         (GitHub / LinkedIn / Copy Email), and short bio.
+    ================================================================= -->
     <header class="hero-section">
+
+      <!-- Availability status pill -->
       <div class="status-badge-wrapper">
         <span class="status-pill">
           <span class="status-indicator"></span> Available for Technical Internships &amp; Roles
@@ -28,14 +48,16 @@
       </div>
 
       <div class="hero-content">
+
+        <!-- Name / headline / location -->
         <div class="hero-identity">
           <h1 class="hero-name">Siddhesh Bhoir</h1>
           <p class="hero-headline">
             Backend Developer &amp; Systems Enthusiast <span class="divider">/</span>
-            <span class="text-cyan">BCA Scholar (CGPA: 9.29)</span>
           </p>
           <p class="hero-location">
-            <svg class="icon-geo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg class="icon-geo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
               <circle cx="12" cy="10" r="3"></circle>
             </svg>
@@ -43,62 +65,65 @@
           </p>
         </div>
 
+        <!-- Primary action buttons: GitHub / LinkedIn / View Resume Copy Email -->
         <div class="hero-actions">
-          <a href="https://github.com/cyber-artist-001" target="_blank" rel="noopener noreferrer" class="action-btn" aria-label="GitHub Profile">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          <a href="https://github.com/cyber-artist-001" target="_blank" rel="noopener noreferrer" class="action-btn"
+            aria-label="GitHub Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+            </svg>
             <span>GitHub</span>
           </a>
-          <a href="https://linkedin.com/in/siddheshbhoir-tech" target="_blank" rel="noopener noreferrer" class="action-btn" aria-label="LinkedIn Profile">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+
+          <a href="https://linkedin.com/in/siddheshbhoir-tech" target="_blank" rel="noopener noreferrer"
+            class="action-btn" aria-label="LinkedIn Profile">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.6 1.6 0 1 0 0-3.2 1.6 1.6 0 0 0 0 3.2m1.39 9.74v-8.37H5.07v8.37h2.78z" />
+            </svg>
             <span>LinkedIn</span>
           </a>
+
+          <!-- View Resume Button with Google Drive link and document icon -->
+          <a href="https://drive.google.com/file/d/1OTizfUacyIfHWn1UM3INGZTcmr7nXKn4/view?usp=sharing" target="_blank"
+            rel="noopener noreferrer" class="action-btn" aria-label="View Resume">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 12h8v2H8v-2zm0 4h8v2H8v-2z" />
+            </svg>
+            <span>View Resume</span>
+          </a>
+
           <button id="copy-email-hero-btn" class="action-btn action-btn-accent" aria-label="Copy email to clipboard">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" aria-hidden="true">
               <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
               <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
             </svg>
             <span>Copy Email</span>
           </button>
         </div>
-      </div>
 
-      <p class="hero-bio">
-        BCA student focused on scalable backend architectures, Linux systems administration, relational database design, and web application security. Experienced in engineering reliable backend platforms and deploying production-ready workloads to live web infrastructure.
-      </p>
+        <!-- Short professional bio -->
+        <p class="hero-bio">
+          Ambitious BCA student and aspiring Ethical Hacker with a strong foundation in Linux environments and web
+          security.
+          Experienced in full-stack development (Python/FastAPI, PHP/MySQL) and operational management, currently
+          specializing
+          in Vulnerability Assessment and Penetration Testing (VAPT). Passionate about securing digital assets and
+          staying ahead
+          of emerging threat vectors.
+        </p>
     </header>
 
-    <!-- Metrics Bar -->
-    <section class="metrics-bar" aria-label="Engineering Key Metrics">
-      <div class="metric-card bento-card">
-        <div class="metric-value-wrap">
-          <span class="metric-val text-emerald">34</span>
-          <span class="metric-unit">Levels</span>
-        </div>
-        <div class="metric-label">OverTheWire Bandit</div>
-        <div class="metric-subtext">Linux Privilege &amp; Wargame Challenges</div>
-      </div>
 
-      <div class="metric-card bento-card">
-        <div class="metric-value-wrap">
-          <span class="metric-val text-cyan">1</span>
-          <span class="metric-unit">Deployment</span>
-        </div>
-        <div class="metric-label">Production Platform</div>
-        <div class="metric-subtext">Vidnyan Vahini NGO Web Infrastructure</div>
-      </div>
-
-      <div class="metric-card bento-card">
-        <div class="metric-value-wrap">
-          <span class="metric-val text-white">9.29</span>
-          <span class="metric-unit">/ 10</span>
-        </div>
-        <div class="metric-label">Cumulative GPA</div>
-        <div class="metric-subtext">Kaveri College (SPPU Affiliated)</div>
-      </div>
-    </section>
-
-    <!-- Featured Projects Grid -->
+    <!-- ================================================================
+         SECTION 01: FEATURED PROJECTS
+         Bento grid of project cards (Vidnyan Vahini + StudentHub).
+    ================================================================= -->
     <section class="workbench-section" id="projects">
+
       <div class="section-title-wrap">
         <h2 class="section-title">
           <span class="mono-prefix">01.</span> Production &amp; Core Architectures
@@ -107,7 +132,62 @@
       </div>
 
       <div class="bento-grid projects-grid">
-        <!-- Project 1: Vidnyan Vahini -->
+
+
+
+        <!-- ---- Project 1: StudentHub (in-progress full-stack platform) ---- -->
+        <article class="bento-card project-card">
+          <div class="card-header">
+            <div class="badge-group">
+              <span class="badge-role">Full-Stack Architect</span>
+              <span class="badge-status badge-dev">
+                <span class="pulse-dot-dev"></span> In Active Development
+              </span>
+            </div>
+            <a href="https://github.com/cyber-artist-001/studenthub" target="_blank" rel="noopener noreferrer"
+              class="card-link" aria-label="Visit StudentHub GitHub Repository">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+              </svg>
+            </a>
+          </div>
+
+          <h3 class="card-heading">StudentHub — Unified Academic &amp; Life Platform</h3>
+
+
+          <div class="card-highlights">
+            <div class="highlight-item">
+              <span class="highlight-bullet">▹</span>
+              <span>Architecting a decoupled academic portal with a Python FastAPI backend, SQLAlchemy ORM, and SQLite
+                database,
+                exposed via secure RESTful endpoints.</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-bullet">▹</span>
+              <span>Building a vanilla JS/HTML5/CSS3 frontend consuming REST APIs to unify academic tracking, exam
+                calendars, and
+                dynamic GPA/CGPA calculations.</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-bullet">▹</span>
+              <span>Integrating an AI study assistant (Google Gemini API) to generate interactive revision quizzes and
+                content summaries.</span>
+            </div>
+          </div>
+
+          <div class="tech-stack-row">
+            <span class="tech-tag">Python (FastAPI)</span>
+            <span class="tech-tag">SQLAlchemy</span>
+            <span class="tech-tag">SQLite / MySQL</span>
+            <span class="tech-tag">Vanilla JS</span>
+          </div>
+
+
+        </article>
+
+
+        <!-- ---- Project 2: Vidnyan Vahini (live production site) ---- -->
         <article class="bento-card project-card">
           <div class="card-header">
             <div class="badge-group">
@@ -116,8 +196,10 @@
                 <span class="pulse-dot"></span> Live Production
               </span>
             </div>
-            <a href="https://testwp.vidnyanvahini.org" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="Visit Vidnyan Vahini Production Site">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <a href="https://testwp.vidnyanvahini.org" target="_blank" rel="noopener noreferrer" class="card-link"
+              aria-label="Visit Vidnyan Vahini Production Site">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15 3 21 3 21 9"></polyline>
                 <line x1="10" y1="14" x2="21" y2="3"></line>
@@ -126,18 +208,19 @@
           </div>
 
           <h3 class="card-heading">Vidnyan Vahini — Web Modernization &amp; Live Deployment</h3>
-          <p class="card-desc">
-            Spearheaded end-to-end web infrastructure modernization and live cutover to production on a legacy domain for an established non-profit educational initiative.
-          </p>
 
           <div class="card-highlights">
             <div class="highlight-item">
               <span class="highlight-bullet">▹</span>
-              <span>Constructed native dynamic query loops to automate monthly report rollouts without code interventions.</span>
+              <span>Backend Lead for end-to-end digital modernization; built a custom WordPress CMS via Astra Child Theme on Linux.</span>
             </div>
             <div class="highlight-item">
               <span class="highlight-bullet">▹</span>
-              <span>Tuned Apache server configuration parameters and file access permissions under a production Linux environment.</span>
+              <span>Engineered dynamic Query Loops to automate content updates for non-technical NGO staff without code edits.</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-bullet">▹</span>
+              <span>Configured Apache server parameters and executed live production deployment onto the legacy domain.</span>
             </div>
           </div>
 
@@ -148,51 +231,18 @@
             <span class="tech-tag">Dynamic Query Loops</span>
           </div>
         </article>
-
-        <!-- Project 2: StudentHub -->
-        <article class="bento-card project-card">
-          <div class="card-header">
-            <div class="badge-group">
-              <span class="badge-role">Full-Stack Architect</span>
-              <span class="badge-status badge-dev">
-                <span class="pulse-dot-dev"></span> In Active Development
-              </span>
-            </div>
-            <a href="https://github.com/cyber-artist-001/studenthub" target="_blank" rel="noopener noreferrer" class="card-link" aria-label="Visit StudentHub GitHub Repository">
-              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-              </svg>
-            </a>
-          </div>
-
-          <h3 class="card-heading">StudentHub — Unified Academic &amp; Life Platform</h3>
-          <p class="card-desc">
-            Architecting a decoupled campus management suite designed with modular RESTful APIs, strict SQL injection resistance, and rapid client render cycles.
-          </p>
-
-          <div class="card-highlights">
-            <div class="highlight-item">
-              <span class="highlight-bullet">▹</span>
-              <span>Implemented dynamic GPA/CGPA computation engines, exam scheduling schedules, and revision asset delivery.</span>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-bullet">▹</span>
-              <span>Secured data access via SQLAlchemy ORM parameterized transactions and server-side request sanitization.</span>
-            </div>
-          </div>
-
-          <div class="tech-stack-row">
-            <span class="tech-tag">Python (FastAPI)</span>
-            <span class="tech-tag">SQLAlchemy</span>
-            <span class="tech-tag">SQLite / MySQL</span>
-            <span class="tech-tag">Vanilla JS</span>
-          </div>
-        </article>
       </div>
     </section>
 
-    <!-- Technical Arsenal (Filterable) -->
+
+    <!-- ================================================================
+         SECTION 02: TECHNICAL ARSENAL
+         Filterable skills grid — Languages / Systems / Databases / Security.
+         Filter buttons rely on data-filter + data-category attrs, wired
+         up in js/script.js.
+    ================================================================= -->
     <section class="workbench-section" id="skills">
+
       <div class="section-title-wrap skills-header-wrap">
         <div>
           <h2 class="section-title">
@@ -201,7 +251,7 @@
           <span class="title-meta">Languages, Infrastructure, Storage &amp; Security Tools</span>
         </div>
 
-        <!-- Filter Tabs -->
+        <!-- Filter tabs -->
         <nav class="filter-nav" aria-label="Technical Arsenal Filter">
           <button class="filter-tab active" data-filter="all">All Modules</button>
           <button class="filter-tab" data-filter="languages">Languages</button>
@@ -212,7 +262,8 @@
       </div>
 
       <div class="skills-grid" id="skills-container">
-        <!-- Languages -->
+
+        <!-- ---- Category: Languages ---- -->
         <div class="skill-tile bento-card" data-category="languages">
           <span class="skill-spec">LANG</span>
           <h4 class="skill-name">Python</h4>
@@ -244,7 +295,7 @@
           <span class="skill-desc">Semantic Structural Standards</span>
         </div>
 
-        <!-- Systems & Infrastructure -->
+        <!-- ---- Category: Systems / Infrastructure ---- -->
         <div class="skill-tile bento-card" data-category="systems">
           <span class="skill-spec spec-cyan">SYS</span>
           <h4 class="skill-name">Linux (Debian CLI)</h4>
@@ -266,7 +317,7 @@
           <span class="skill-desc">VCS, Rebase &amp; Branch Policies</span>
         </div>
 
-        <!-- Databases -->
+        <!-- ---- Category: Databases ---- -->
         <div class="skill-tile bento-card" data-category="databases">
           <span class="skill-spec spec-amber">DATA</span>
           <h4 class="skill-name">MySQL</h4>
@@ -283,7 +334,7 @@
           <span class="skill-desc">Custom Themes, Post Types &amp; DB</span>
         </div>
 
-        <!-- Security -->
+        <!-- ---- Category: Security ---- -->
         <div class="skill-tile bento-card" data-category="security">
           <span class="skill-spec spec-emerald">SEC</span>
           <h4 class="skill-name">OWASP Top 10</h4>
@@ -302,8 +353,13 @@
       </div>
     </section>
 
-    <!-- Experience & Technical Leadership -->
+
+    <!-- ================================================================
+         SECTION 03: EXPERIENCE & LEADERSHIP
+         Part-time job + hackathon volunteering + seminar leadership.
+    ================================================================= -->
     <section class="workbench-section" id="experience">
+
       <div class="section-title-wrap">
         <h2 class="section-title">
           <span class="mono-prefix">03.</span> Experience &amp; Leadership
@@ -312,40 +368,52 @@
       </div>
 
       <div class="bento-grid exp-grid">
-        <!-- Experience 1 -->
+
+        <!-- ---- Experience 1: Ongoing part-time role ---- -->
         <div class="bento-card exp-card">
           <div class="exp-timeline">Jul 2024 — Present</div>
           <h3 class="exp-role">Operations &amp; Management Assistant (Part-Time)</h3>
           <div class="exp-org">Jinendra Book Manufacturing Company, Pune</div>
           <p class="exp-details">
-            Manage high-volume operational records and inventory logistics pipelines. Implemented structured tracking practices to maintain 100% data integrity during accelerated dispatch schedules.
+            Manage high-volume operational records and inventory logistics pipelines.
+            Implemented structured tracking practices to maintain 100% data integrity
+            during accelerated dispatch schedules.
           </p>
         </div>
 
-        <!-- Experience 2 -->
+        <!-- ---- Experience 2: Hackathon volunteering ---- -->
         <div class="bento-card exp-card">
           <div class="exp-timeline">Academic Event</div>
           <h3 class="exp-role">Technical Support Volunteer</h3>
           <div class="exp-org">Kaveri Hackathon 2.0</div>
           <p class="exp-details">
-            Configured on-premise Wi-Fi routers and local subnets, actively monitored network uptime, and executed rapid hardware diagnostics during an intense multi-team engineering sprint.
+            Configured on-premise Wi-Fi routers and local subnets, actively monitored
+            network uptime, and executed rapid hardware diagnostics during an intense
+            multi-team engineering sprint.
           </p>
         </div>
 
-        <!-- Experience 3 -->
+        <!-- ---- Experience 3: Seminar leadership ---- -->
         <div class="bento-card exp-card">
           <div class="exp-timeline">Technical Delivery</div>
           <h3 class="exp-role">Session Lead</h3>
           <div class="exp-org">Cyber-Attack Case Studies Seminar</div>
           <p class="exp-details">
-            Authored and conducted an interactive technical presentation dissecting historic real-world intrusion vectors, credential harvesting mechanics, and baseline defensive countermeasures.
+            Authored and conducted an interactive technical presentation dissecting
+            historic real-world intrusion vectors, credential harvesting mechanics,
+            and baseline defensive countermeasures.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Education Bento Card -->
+
+    <!-- ================================================================
+         SECTION 04: ACADEMIC FOUNDATION
+         Single highlighted card with degree, institution, and GPA.
+    ================================================================= -->
     <section class="workbench-section" id="education">
+
       <div class="section-title-wrap">
         <h2 class="section-title">
           <span class="mono-prefix">04.</span> Academic Foundation
@@ -372,18 +440,27 @@
       </div>
     </section>
 
-    <!-- Interactive Contact Footer -->
+
+    <!-- ================================================================
+         SECTION: CONTACT FOOTER
+         Call-to-action heading, copy-email button, and social links.
+    ================================================================= -->
     <footer class="footer-workbench">
       <div class="bento-card footer-card">
+
         <div class="footer-callout">
           <span class="callout-indicator"></span>
           <h3 class="footer-heading">Let's discuss systems, backends, or security.</h3>
-          <p class="footer-subtext">Open to technical internships, system developer opportunities, and collaborative builds.</p>
+          <p class="footer-subtext">Open to technical internships, system developer opportunities, and collaborative
+            builds.</p>
         </div>
 
         <div class="contact-actions">
-          <button id="copy-email-btn" class="contact-btn contact-btn-primary" data-email="siddheshbhoir.kc@gmail.com" aria-label="Copy Siddhesh Bhoir's Email">
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <!-- Copy-to-clipboard email button (handled in js/script.js) -->
+          <button id="copy-email-btn" class="contact-btn contact-btn-primary" data-email="siddheshbhoir.kc@gmail.com"
+            aria-label="Copy Siddhesh Bhoir's Email">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <polyline points="22,6 12,13 2,6"></polyline>
             </svg>
@@ -392,11 +469,13 @@
           </button>
 
           <div class="social-links-row">
-            <a href="https://github.com/cyber-artist-001" target="_blank" rel="noopener noreferrer" class="contact-btn contact-btn-ghost">
+            <a href="https://github.com/cyber-artist-001" target="_blank" rel="noopener noreferrer"
+              class="contact-btn contact-btn-ghost">
               <span>GitHub</span>
               <span class="arrow-glyph">↗</span>
             </a>
-            <a href="https://linkedin.com/in/siddheshbhoir-tech" target="_blank" rel="noopener noreferrer" class="contact-btn contact-btn-ghost">
+            <a href="https://linkedin.com/in/siddheshbhoir-tech" target="_blank" rel="noopener noreferrer"
+              class="contact-btn contact-btn-ghost">
               <span>LinkedIn</span>
               <span class="arrow-glyph">↗</span>
             </a>
@@ -411,9 +490,14 @@
     </footer>
   </div>
 
-  <!-- Toast Notification -->
+  <!-- ================================================================
+       TOAST NOTIFICATION
+       Shown briefly after a "Copy Email" action succeeds.
+       Toggled via js/script.js.
+  ================================================================= -->
   <div id="toast" class="toast" role="alert" aria-live="polite">Email copied to clipboard!</div>
 
   <script src="js/script.js"></script>
 </body>
+
 </html>
