@@ -281,6 +281,54 @@ body {
   line-height: 1.7;
 }
 
+.hero-identity-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-avatar-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+}
+
+.hero-avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: var(--radius-card);
+  border: 2px solid rgba(6, 182, 212, 0.4);
+  background: var(--bg-surface-elevated);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform var(--transition-fast), border-color var(--transition-smooth);
+}
+
+.hero-avatar-wrapper:hover .hero-avatar {
+  transform: scale(1.02);
+  border-color: var(--cyan-primary);
+}
+
+/* Subtle cyan ambient glow behind the avatar */
+.avatar-glow {
+  position: absolute;
+  inset: -4px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.3) 0%, transparent 70%);
+  border-radius: var(--radius-card);
+  z-index: 1;
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+/* Ensure Copy Email Button in Hero doesn't overlap text */
+#copy-email-hero-btn {
+  margin-top: 0.85rem;
+}
+
 /* ==========================================================================
    METRICS BAR
    ========================================================================== */
@@ -551,9 +599,9 @@ body {
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
 }
 
 .skill-tile {
@@ -604,6 +652,7 @@ body {
 .exp-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .exp-timeline {
@@ -902,11 +951,16 @@ body {
 
   .hero-actions {
     width: 100%;
+    display: flex;
+    size: 10%;
   }
 
   .action-btn {
-    flex: 1;
+    flex: 10;
     justify-content: center;
+    display: flex;
+    size: 10%;
+    
   }
 
   .edu-score-badge {
@@ -930,5 +984,15 @@ body {
   .social-links-row .contact-btn-ghost {
     flex: 1;
     justify-content: center;
+  }
+  .hero-identity-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+
+  .hero-avatar-wrapper {
+    width: 96px;
+    height: 96px;
   }
 }
