@@ -143,3 +143,25 @@ function initEmailCopyMechanisms() {
     footerCopyBtn.addEventListener('click', () => handleEmailCopy(footerCopyBtn));
   }
 }
+
+// Profile Photo Lightbox Modal Logic
+const profileTrigger = document.getElementById('profile-trigger');
+const imageModal = document.getElementById('image-modal');
+const modalImg = document.getElementById('modal-img');
+
+if (profileTrigger && imageModal && modalImg) {
+  profileTrigger.addEventListener('click', () => {
+    const avatarImg = profileTrigger.querySelector('.hero-avatar');
+    if (avatarImg) {
+      modalImg.src = avatarImg.src;
+      imageModal.classList.add('is-active');
+      imageModal.setAttribute('aria-hidden', 'false');
+    }
+  });
+
+  // Clicking anywhere closes the modal
+  imageModal.addEventListener('click', () => {
+    imageModal.classList.remove('is-active');
+    imageModal.setAttribute('aria-hidden', 'true');
+  });
+}

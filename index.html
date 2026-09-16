@@ -50,7 +50,7 @@
         <div class="hero-identity-group">
           
           <!-- Avatar Frame -->
-          <div class="hero-avatar-wrapper">
+          <div class="hero-avatar-wrapper" id="profile-trigger" style="cursor: pointer;" title="Click to enlarge">
             <img src="assets/profile.jpeg" alt="Siddhesh Bhoir" class="hero-avatar" />
             <div class="avatar-glow" aria-hidden="true"></div>
           </div>
@@ -59,7 +59,7 @@
           <div class="hero-identity">
             <h1 class="hero-name">Siddhesh Bhoir</h1>
             <p class="hero-headline">
-              Backend Developer &amp; Systems Enthusiast <span class="divider">/</span>
+              Aspiring Ethical Hacker &amp; Developer <span class="divider">/</span>
             </p>
             <p class="hero-location">
               <svg class="icon-geo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -102,7 +102,7 @@
             <span>LinkedIn</span>
           </a>
 
-          <a href="https://drive.google.com/file/d/1OTizfUacyIfHWn1UM3INGZTcmr7nXKn4/view?usp=sharing" target="_blank"
+          <a href="https://drive.google.com/file/d/1m-08OPZwe8WMcIEfjl7YkUl9P2vrPSgk/view?usp=sharing" target="_blank"
             rel="noopener noreferrer" class="action-btn" aria-label="View Resume">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
               <path
@@ -191,7 +191,7 @@
             <span class="tech-tag">SQLite / MySQL</span>
             <span class="tech-tag">Vanilla JS</span>
           </div>
-          <a href="https://github.com/cyber-artist-001" target="_blank" rel="noopener noreferrer" style="margin-top: 5%;"
+          <a href="https://github.com/cyber-artist-001/studenthub" target="_blank" rel="noopener noreferrer" style="margin-top: 5%;"
               class="contact-btn contact-btn-ghost">
               <span>View Repository</span>
               <span class="arrow-glyph">↗</span>
@@ -449,7 +449,7 @@
         </div>
         <div class="edu-footer">
           <span class="edu-timeline">Duration: 2024 — 2027 (Currently Enrolled)</span>
-          <span class="edu-focus">Key Coursework: Applied Computer Applications, DSA, OOP, Relational Databases (SQL), Computer Networks & Web Systems</span>
+          <span class="edu-focus">Key Coursework: DSA, Full-Stack Web Technologies, Relational Database Management (SQL), Computer Networks, OOP, Business Administration, Entrepreneurship, Management</span>
         </div>
       </div>
     </section>
@@ -510,6 +510,14 @@
        Toggled via js/script.js.
   ================================================================= -->
   <div id="toast" class="toast" role="alert" aria-live="polite">Email copied to clipboard!</div>
+<!-- Lightbox Modal for Profile Photo Zoom -->
+  <div id="image-modal" class="image-modal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <img id="modal-img" src="" alt="Profile Enlarge" class="modal-avatar-img" />
+      <span class="modal-close-hint">Click anywhere to close</span>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
